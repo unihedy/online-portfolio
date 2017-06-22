@@ -376,7 +376,7 @@ td img:hover{
 .slider_big {
 	width: 1065px;
 	overflow: auto;
-	margin: -55px 0px 0px;
+	margin: 0px 0px 0px;
 	position: relative;
 	padding:0px 5px 0px 5px
 }
@@ -518,6 +518,10 @@ zoom:1;
 	background-repeat: no-repeat;
 	font-family: "Courier New", Courier, monospace;
 }
+#gallery_title_t {
+	padding-left: 40px;
+	}
+
 .title_t_line {
 	color: #85CBC4;
 	height: 32px;
