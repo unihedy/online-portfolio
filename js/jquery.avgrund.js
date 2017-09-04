@@ -21,7 +21,7 @@
 	$.fn.avgrund = function (options) {
 		var defaults = {
 			width: 380, // max = 980
-			height: 280, // max = 536
+			height: 280, // max = 630
 			showClose: false,
 			showCloseText: '',
 			closeByEscape: true,
@@ -43,7 +43,7 @@
 			var self = $(this),
 				body = $('body'),
 				maxWidth = options.width > 980 ? 980 : options.width,
-				maxHeight = options.height > 536 ? 536 : options.height,
+				maxHeight = options.height > 630 ? 630 : options.height,
 				template = typeof options.template === 'function' ? options.template(self) : options.template;
 
 			body.addClass('avgrund-ready');
