@@ -12,8 +12,8 @@
 <meta name="author"content="Hedy">
 <meta name="copyright" CONTENT="本網頁著作權Hedy所有">
 <link href="style.css" rel="stylesheet" type="text/css" />
-
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 <!--分析-->
 <script>
@@ -69,11 +69,15 @@
 <div class="menu">
     <ul>
       <li><a href="web.html">網頁視覺 </a></li>
-      <li><a href="web-banner.html"> banner </a></li>
-      <li><a href="web-ad.html"> 廣告圖像 </a></li>
+      <li><a href="page-2.html"> banner </a></li>
+      <li><a href="page-3.html"> 廣告圖像 </a></li>
     </ul>
   </div>
+ 
     <div class="web_box">
+<div id="galleryContainer" class="inner">    
+    
+    <div class="column">
     <!--標題-->
     <div class="title_t">Advertising Image design 廣告圖像版面設計 </div>
 <!--標題-->
@@ -86,22 +90,34 @@
 </div>
 <div class="ad_box"><img src="image/web/ad/souffle.jpg" width="500" height="344" />
 </div>
+
+</div><!--column-->
+
+<div class="column">
+
 <h3>small size AD</h3>
 <div class="small-line"><img src="image/web/ad/small-line.png" width="500" height="10" alt="small_line" /></div>
 <div class="p2">製作不同尺寸，訴求明朗且吸引大眾目光的廣告設計版面連結，<br />於各大網頁曝光，可以有效提高網站的點擊及流量及提升品牌知名度。
     </div>
 <div class="ad_box_small"><img src="image/web/ad/1.250x250.jpg" width="250" height="250" alt="1" /></div>
-<div class="ad_box_small_center"><img src="image/web/ad/2.336x280.jpg" width="250" height="250" alt="1" /></div>
+<div class="ad_box_small"><img src="image/web/ad/2.336x280.jpg" width="250" height="250" alt="1" /></div>
 <div class="ad_box_small"><img src="image/web/ad/3.300x250.jpg" width="250" height="250" alt="1" /></div>
-<div class="ad_box_small_center"><img src="image/web/ad/5.200x200.jpg" width="250" height="250" alt="1" /></div>
+<div class="ad_box_small"><img src="image/web/ad/5.200x200.jpg" width="250" height="250" alt="1" /></div>
 <div class="ad_box_small"><img src="image/web/ad/mothersday200x200.jpg" width="250" height="250" alt="1" /></div>
-<div class="ad_box_small_center"><img src="image/web/ad/mothersday336x280.jpg" width="250" height="250" alt="1" /></div>
+<div class="ad_box_small"><img src="image/web/ad/mothersday336x280.jpg" width="250" height="250" alt="1" /></div>
 <div class="ad_box_small"><img src="image/web/ad/third-250x250.jpg" width="250" height="250" alt="1" /></div>
-<div class="ad_box_small_center"><img src="image/web/ad/third-300x600-120x600.jpg" width="250" height="250" alt="1" /></div>
-<div class="ad_box_small_nagai"><img src="image/web/ad/nagaiA.jpg" width="500" height="250" alt="1" /></div>
-<div class="ad_box_small_nagai"><img src="image/web/ad/nagaiB.jpg" width="500" height="250" alt="1" /></div>
-    </div>
+<div class="ad_box_small"><img src="image/web/ad/third-300x600-120x600.jpg" width="250" height="250" alt="1" /></div>
+<div class="ad_box_small"><img src="image/web/ad/nagaiA.jpg" width="500" height="250" alt="1" /></div>
+<div class="ad_box_small"><img src="image/web/ad/nagaiB.jpg" width="500" height="250" alt="1" /></div>
+</div><!--column-->
+
+
+</div><!-- /gallery-container -->  
+
+    </div><!--web box-->
     
+
+  
     </div>
     <!--menu_and_box_inner-->
     </div>
@@ -111,5 +127,8 @@
  <div id="footer"> © 2017 Hedy Design.</div>
 </div>
 
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/script2.js"></script>
 </body>
 </html>
