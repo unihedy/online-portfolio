@@ -137,7 +137,7 @@ ul#nav li.web_selected {
 ul#nav li.line {
 	background-image: url(image/nav_hover_98X115_12.png);
 	height: 115px;
-	width: 98px;;
+	width: 98px;
 	margin-right: 25px;
 	background-position: center -40px;
 	background-repeat: no-repeat;
@@ -991,5 +991,159 @@ top:1px;
     min-width: 94%;
     width: 94%;
 }
+#bignav{
+	 width: 200%;
+	}
+	
+ul#nav li a{
+	text-indent: -999px;
+	display: block;
+	height: 200%;
+	width: 200%;
+	margin: 0px;
+	padding: 0px;
+}
 
+ul#nav li.about {
+	background-image: url(image/nav_hover_98X115_06.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+	
+}
+
+
+ul#nav li:hover.about {
+	background-image: url(image/nav_hover_98X115_06.png);
+	background-position: center bottom;
+	}
+
+	
+ul#nav li.about_selected {
+	background-image: url(image/nav_select_06.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+
+
+ul#nav li.gallery {
+	background-image: url(image/nav_hover_98X115_08.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+}
+ul#nav li:hover.gallery {
+	background-image: url(image/nav_hover_98X115_08.png);
+	background-position: center bottom;
+}
+
+ul#nav li.gallery_selected {
+	background-image: url(image/nav_select_08.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+
+ul#nav li.web {
+	background-image: url(image/nav_hover_98X115_10.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+}
+ul#nav li:hover.web {
+	background-image: url(image/nav_hover_98X115_10.png);
+	background-position: center bottom;
+}
+ul#nav li.web_selected {
+	background-image: url(image/nav_select_10.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+
+
+ul#nav li.line {
+	background-image: url(image/nav_hover_98X115_12.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+}
+ul#nav li:hover.line {
+	background-image: url(image/nav_hover_98X115_12.png);
+	background-position: center bottom;
+}
+ul#nav li.line_selected {
+	background-image: url(image/nav_select_12.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+
+
+
+ul#nav li.hobby {
+	background-image: url(image/nav_hover_98X115_14.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+}
+ul#nav li:hover.hobby {
+	background-image: url(image/nav_hover_98X115_14.png);
+	background-position: center bottom;
+}
+ul#nav li.hobby_selected {
+	background-image: url(image/nav_select_14.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+
+ul#nav li.contact {
+	background-image: url(image/nav_hover_98X115_16.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center -40px;
+	background-repeat: no-repeat;
+}
+ul#nav li:hover.contact {
+	background-image: url(image/nav_hover_98X115_16.png);
+	background-position: center bottom;
+}
+ul#nav li.contact_selected {
+	background-image: url(image/nav_select_16.png);
+	height: 200%;
+	width: 200%;
+	margin-right: 25px;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}	
+	
+	
 }

@@ -111,22 +111,8 @@ body.avgrund-active {
 	text-decoration: none;
 	text-transform: uppercase;
 	position: absolute;
-	top: 6px;
-	right: 10px;
+	top: 8px;
+	right: 30px;
 }
 
-@media only screen and (max-width:767px) {
-	
-.avgrund-popin{
-	max-width: 80%;
-    min-width: 80%;
-    width: 80%;
-}
 
-.avgrund-overlay{
-	max-width: 80%;
-    min-width: 80%;
-    width: 80%;
-}
-
-}
