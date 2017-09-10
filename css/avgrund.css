@@ -114,3 +114,19 @@ body.avgrund-active {
 	top: 6px;
 	right: 10px;
 }
+
+@media only screen and (max-width:767px) {
+	
+.avgrund-popin{
+	max-width: 90%;
+    min-width: 90%;
+    width: 90%;
+}
+
+.avgrund-overlay{
+	max-width: 90%;
+    min-width: 90%;
+    width: 90%;
+}
+
+}
