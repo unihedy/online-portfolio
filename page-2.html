@@ -11,49 +11,50 @@
 "/>
 <meta name="author"content="Hedy">
 <meta name="copyright" CONTENT="本網頁著作權Hedy所有">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 <link href="style.css" rel="stylesheet" type="text/css" />
-
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-<style type="text/css">
-#main #content .web_box img {
-}
-#apDiv1 {
-	position: absolute;
-	z-index: 10;
-	left: 0px;
-	top: 460px;
-}
-#apDiv2 {
-	position: absolute;
-	z-index: 1;
-	left: 0px;
-	top: 940px;
-}
-</style>
-<script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+<!--輕量級幻燈片-->
+ <link type="text/css" rel="stylesheet"  href="css/lightslider.css"/>
+<style>
+      ul{
+      list-style: none outside none;
+    }
+    .demo .item{
+          margin-bottom: 30px;
+        }
+    .content-slider li{
+      background-color: #ffffff;
+      text-align: center;
+      color:#FFF;
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
+    }
+    .content-slider h3 {
+        margin: 0;
+        padding: 70px 0;
+    }
+    .demo{
+      max-width: 600px;
+    }
+    @media only screen and (max-width:768px) {
+    .demo{
+     margin-left:70px;
+   }
+    @media only screen and (max-width:414px) {
+    .demo{
+     margin-left:0px;
+   }
+    </style>
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightslider.js"></script>
+<!--輕量級幻燈片-->
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
+
 </script>
 <!--分析-->
 <script>
@@ -68,32 +69,30 @@ function MM_swapImage() { //v3.0
 </script>
 <!--分析-->
 
-<!--gotop-->
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
-<!--gotop-->
+
 
 </head>
 
-<body onload="MM_preloadImages('image/web/banner/index_newopen8.jpg','image/web/banner/index_newopen9.jpg','image/web/banner/index_newopen13.jpg','image/web/banner/index_newopen7.jpg','image/web/banner/index_newopen12.jpg','image/web/banner/index_newopen14.jpg','image/web/banner/index_1980.jpg','image/web/banner/index_2013-SS.jpg','image/web/banner/TERRI-keep-it-simple.jpg','image/web/banner/LIDO-fashion-design.jpg','image/web/banner/LIDO-elegant-woman.jpg','image/web/banner/http-retrofashion.jpg','image/web/banner/http-color-beads.jpg','image/web/banner/http-animal.jpg','image/web/banner/Casual-flats.jpg','image/web/banner/bloggerXmodel's-choice.jpg','image/web/banner/all-series.jpg','image/web/banner/1031-Swan-Lake-Ballet-Shoes.jpg','image/web/banner/1031Lovely-Girl.jpg','image/web/banner/1031Candy-Girl.jpg','image/web/banner/shop-by-size.jpg','image/web/banner/shop-by-design.jpg','image/web/banner/NEWS.jpg','image/web/banner/LIDO-Shining-girl.jpg')">
+<body>
 
 <div id="main">
   <div id="header">
-    <div id="logo"><a href="index.html"><img src="image/LOGO.svg" width="228" height="219" alt="logo" title="Hedy's online portfolio" /></a></div>
+    <div id="logo"><a href="index.html">LOGO</a></div>
     <div id="bignav">
       <ul id="nav">
-        <li class="about"><a href="about.html">about</a></li>
-        <li class="gallery"><a href="gallery.html">gallery</a></li>
-        <li class="web_selected"></li>
-        <li class="line"><a href="line.html">line</a></li>
-        <li class="hobby"><a href="hobby-Felting.html">hobby</a></li>
-        <li class="contact"><a href="contact.html">contact</a></li>
+        <li class="about"><a href="about.html">關於我</a></li>
+        <li class="gallery"><a href="gallery.html">畫廊</a></li>
+        <li class="web_selected"><a><i class="fa fa-sort-desc" aria-hidden="true"></i>網頁</a></li>
+        <li class="line"><a href="line.html">貼圖</a></li>
+        <li class="hobby"><a href="hobby-Felting.html">嗜好</a></li>
+        <li class="contact"><a href="contact.html">聯絡我</a></li>
       </ul>
     </div>
     <!--麵包屑-->
     <ul class="Breadcrumb">
       <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a title="回首頁" href="index.html" itemprop="url"> <span itemprop="title">首頁</span> </a> » </li>
       <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a href="web.html" itemprop="url"> <span itemprop="title">網頁</span> </a> » </li>
-      <li> <a class="title">主視覺大板塊設計</a> </li>
+      <li> <a class="title">banner</a> </li>
     </ul>
     
     <!--麵包屑--> 
@@ -113,8 +112,6 @@ function MM_swapImage() { //v3.0
    <div id="galleryContainer" class="inner">  
    
   <div class="column"> 
-    
-  
       <!--標題-->
       <div class="title_t">Web banner design 主視覺大板塊設計 </div>
       <!--標題-->
@@ -123,57 +120,101 @@ function MM_swapImage() { //v3.0
       <div class="p2">進入網站後，首頁最上方的輪播banner往往給顧客最大的視覺衝擊，<br />
 擺放著吸引目光的特惠內容，或者是品牌形象的視覺，往往能提升整個網站的好感度。
     </div>
+<div class="demo">
+        <div class="item">            
+            <div class="clearfix" style="max-width:600px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="image/web/banner/s_index_newopen7.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen7.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_newopen8.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen8.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_newopen9.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen9.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_newopen12.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen12.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_newopen13.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen13.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_newopen14.jpg"> 
+                        <img width="100%" src="image/web/banner/index_newopen14.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_1980.jpg"> 
+                        <img width="100%" src="image/web/banner/index_1980.jpg" />
+                         </li>
+                    <li data-thumb="image/web/banner/s_index_2013-SS.jpg"> 
+                        <img width="100%" src="image/web/banner/index_2013-SS.jpg" />
+                         </li>
+                </ul>
+            </div>
+      </div>
+    
       
-<div id="big_banner"><img src="image/web/banner/index_newopen8.jpg" alt="choose_your_own_style" name="big_banner" width="600" height="275" id="big_banner" /></div>
-      <table width="268" cellspacing="10">
-        <tr>
-          <td><img src="image/web/banner/s_index_newopen8.jpg" alt="choose_your_own_style" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen8.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_newopen9.jpg" alt="the_garden_fairy" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen9.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_newopen13.jpg" alt="mocassin" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen13.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_newopen7.jpg" alt="musical_notes_collection" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen7.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-        </tr>
-        <tr>
-          <td><img src="image/web/banner/s_index_newopen12.jpg" alt="mother's_day" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen12.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_newopen14.jpg" alt="trip" width="134" height="62" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_newopen14.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_1980.jpg" alt="1980" width="134" height="55" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_1980.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/s_index_2013-SS.jpg" alt="2013-SS" width="134" height="55" onmouseover="MM_swapImage('big_banner','','image/web/banner/index_2013-SS.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-        </tr>
-      </table>
- </div>     
+
       
-<div class="column">       
       <h3>category banner </h3>
       <div class="small-line"><img src="image/web/banner/small-line.png" width="600" height="10" alt="small-line" /></div>
       <div class="p2">各分類鞋款上方擺放最具特色鞋款的美化banner，為點擊分類後第一視覺停留的地方，<br />
 能讓顧客停留時間加長，且使用清楚具設計感的標題能讓顧客更有興趣深入觀看商品。
     </div>
-      
-<div id="big_banner"><img src="image/web/banner/TERRI-keep-it-simple.jpg" alt="TERRI-keep-it-simple" name="middle_banner" width="600" height="156" id="middle_banner" /></div>
-      <table width="300" border="0" cellspacing="10">
-        <tr>
-          <td><img src="image/web/banner/ss_TERRI-keep-it-simple.jpg" alt="keep-it-simple" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/TERRI-keep-it-simple.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_LIDO-fashion-design.jpg" alt="fashion-design" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/LIDO-fashion-design.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_LIDO-elegant-woman.jpg" alt="elegant-woman" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/LIDO-elegant-woman.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_http-retrofashion.jpg" alt="retrofashion" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/http-retrofashion.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_http-color-beads.jpg" alt="color-beads" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/http-color-beads.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_http-animal.jpg" alt="animal" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/http-animal.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_Casual-flats.jpg" alt="Casual-flats" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/Casual-flats.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-        </tr>
-        <tr>
-          <td><img src="image/web/banner/ss_bloggerXmodel-choice.jpg" alt="bloggerXmodel-choice" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/bloggerXmodel-choice.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_all-series.jpg" alt="all-series" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/all-series.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_1031-Swan-Lake-Ballet-Shoes.jpg" alt="Swan-Lake-Ballet-Shoes" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/1031-Swan-Lake-Ballet-Shoes.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_1031Lovely-Girl.jpg" alt="Lovely-Gir" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/1031Lovely-Girl.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_1031Candy-Girl.jpg" alt="Candy-Girl" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/1031Candy-Girl.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_shop-by-size.jpg" alt="shop-by-size" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/shop-by-size.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_shop-by-design.jpg" alt="shop-by-design" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/shop-by-design.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-        </tr>
-        <tr>
-          <td><img src="image/web/banner/ss_NEWS.jpg" alt="NEWS" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/NEWS.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-          <td><img src="image/web/banner/ss_LIDO-Shining-girl.jpg" alt="Shining-girl" width="75" height="20" onmouseover="MM_swapImage('middle_banner','','image/web/banner/LIDO-Shining-girl.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
-        </tr>
-      </table>
- </div>   
+     
+<div class="item">
+            <ul id="content-slider" class="content-slider">
+                <li>
+                    <img width="100%" src="image/web/banner/TERRI-keep-it-simple.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/banner/LIDO-fashion-design.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/banner/LIDO-elegant-woman.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/banner/http-retrofashion.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/banner/http-color-beads.jpg" />
+                </li>
+                <li>
+                     <img width="100%" src="image/web/banner/http-animal.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/Casual-flats.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/bloggerXmodel-choice.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/all-series.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/1031-Swan-Lake-Ballet-Shoes.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/1031Lovely-Girl.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/1031Candy-Girl.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/shop-by-size.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/shop-by-design.jpg" />
+                </li>
+                <li>
+                    <img  width="100%" src="image/web/banner/LIDO-Shining-girl.jpg" />
+                </li>
+            </ul>
+        </div>
+
+   </div><!-- /demo -->
+    </div><!-- /column -->
+   
+
    
     </div><!-- /gallery-container -->
     </div><!--web box-->
@@ -184,12 +225,33 @@ function MM_swapImage() { //v3.0
      <!--menu_and_box-->
   </div>
   <!--indexonly_content-->
-  <div id="footer"> © 2017 Hedy Design.</div>
+  <div id="footer"> © 2018 Hedy Design.</div>
 </div>
 
 
 <div id="gotop">˄</div>
-
+<script>
+       $(document).ready(function() {
+      $("#content-slider").lightSlider({
+                auto:true,
+                loop:true,
+                keyPress:true,
+                item:1,
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:8,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+    });
+    </script>
 <script src="js/js-gotop.js"></script>
 </body>
 </html>

@@ -207,9 +207,9 @@ sample4　colorbox的額外設定
 
 @media only screen and (max-width:767px) {
   .inner {
-    max-width: 94%;
-    min-width: 94%;
-    width: 94%;
+    max-width: 96%;
+    min-width: 96%;
+    width: 96%;
   }
  
   #siteID {
@@ -217,8 +217,9 @@ sample4　colorbox的額外設定
     text-align: center;
   }
   #contentContainer {
-    padding: 20px 0 40px;
+    padding: 5px 0 40px;
     margin: 0 auto;
+    margin-top: -20px;
   }
  
   #contentContainer h1. {

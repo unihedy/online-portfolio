@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Hedy's online portfolio</title>
-
+    
 <meta name="description"content="
 代表形象為表情豐富的台灣種企鵝，明明是企鵝卻怕冷，<br />
 牡羊座，卻熱愛清爽的藍綠色，<br />
@@ -11,108 +11,223 @@
 "/>
 <meta name="author"content="Hedy">
 <meta name="copyright" CONTENT="本網頁著作權Hedy所有">
+    
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
 <link href="style.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
+<link rel="stylesheet" href="font/font-awesome/css/font-awesome.css" />   
+<link rel="stylesheet" href="css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/vertical-timline.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--分析-->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-#apDiv2 {
-	position: absolute;
-	z-index: 1;
-	left:600px;
-	top: 180px;
-}
-
-
-</style>
-
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<!--分析-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46056802-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!--分析-->
+    ga('create', 'UA-46056802-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!--分析-->
+    <!--gotop-->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+    <!--gotop-->
 </head>
 
 <body>
-
-<div id="main">
-  <div id="header">
-    <div id="logo"><a href="index.html"><img src="image/LOGO.svg" width="228" height="219" alt="logo" title="Hedy's online portfolio" /></a></div>
-    <div id="bignav">
-  <ul id="nav">
-    <li class="about_selected"></li>
-    <li class="gallery"><a href="gallery.html">gallery</a></li>
-    <li class="web"><a href="web.html">web</a></li>
-    <li class="line"><a href="line.html">line</a></li>
-    <li class="hobby"><a href="hobby-Felting.html">hobby</a></li>
-    <li class="contact"><a href="contact.html">contact</a></li>
-  </ul>
-    </div>
-<!--麵包屑-->
-<ul class="Breadcrumb">
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                  <a title="回首頁" href="index.html" itemprop="url">
+    <div id="main">
+        <div id="header">
+            <div id="logo"><a href="index.html">LOGO</a></div>
+            <div id="bignav">
+                <ul id="nav">
+                    <li class="about_selected"><a><i class="fa fa-sort-desc" aria-hidden="true"></i>關於我</a></li>
+                    <li class="gallery"><a href="gallery.html">畫廊</a></li>
+                    <li class="web"><a href="web.html">網頁</a></li>
+                    <li class="line"><a href="line.html">貼圖</a></li>
+                    <li class="hobby"><a href="hobby-Felting.html">嗜好</a></li>
+                    <li class="contact"><a href="contact.html">聯絡我</a></li>
+                </ul>
+            </div>
+            <!--麵包屑-->
+            <ul class="Breadcrumb">
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a title="回首頁" href="index.html" itemprop="url">
                       <span itemprop="title">首頁</span>
                   </a> »
-    </li>
-    <li>
-                  <a class="title">關於我</a>
-    </li>
-</ul>
+                </li>
+                <li>
+                    <a class="title">關於我</a>
+                </li>
+            </ul>
+            <!--麵包屑-->
+        </div>
+        <div id="content">
+            <div class="slider_about">
+               <div class="about-me_title_t"> <!--標題-->
+                <h7>About me關於我</h7>
+                <!--標題--></div>
+                <div id="text-center">
+                    <div class="about_avatar"><img src="image/hanami.jpg" alt="avatar" name="about_avatar" id="about_avatar" /></div>
+                    <div class="content_box">喜歡畫畫、攝影、玩羊毛氈。
+                        <br />雖然畢業於日文系，卻對設計相關工作情有獨鍾，也期待兩者相輔相成。
+                        <br /> 無論有多少岔路，堅持前往的目標就是畫畫與設計，並自我進修網頁前端技術。
+                        <br /> 非本科系也可以出頭天，是支持我一路走來的一大信念。
+                        <br /><h5><a href="https://www.facebook.com/unihedy/" target="_blank"> <i class="fa fa-facebook-square" aria-hidden="true"></i> 企鵝媽咪繪藝室</a></h5>
+                    </div>
+                </div>
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-skill">
+                            <img src="image/cd-icon-skill.svg" alt="skill">
+                        </div>
 
-  <!--麵包屑-->
-  </div>
-  <div id="content">
-   <div id="apDiv3"><img src="image/tail_06.png" width="272" height="125" alt="tail" />
-</div>
-    <h2 id="title_t">About me 關於我
-    </h2>
-    
-   
-   
-<div id="text-center">
-        
-   <div class="about_avatar"><img src="image/about/hanami.jpg" alt="avatar" name="about_avatar" width="150" height="150" id="about_avatar" /></div>
-   
-    <div class="content_box">就讀普通高中，大學念日文系，卻只對設計相關工作情有獨鍾，充滿熱情。<br />
-      無論有多少岔路，堅持前往的目標就是畫畫與設計，<br />
-      非本科系也可以出頭天，是我對未來期望的一大信念。
-      <p>從後端開始起步，深知設計師角色在印製成品前，該與不該做的眉角，<br />
-        擁有轉變成設計之前就先了解後端的優勢。<br />
-        4年於印刷廠的印前製程美工經驗，從完稿，修改，落版每位設計師的<br />
-        繁複稿件，解決印前的各式誤差，當中更累積了對設計的敏銳度。<br />
-      之後換到不同領域負責網頁主視覺Banner、商品頁框，廣告曝光版面設計， <br />
-      視覺設計搭配行銷文字如何能更吸引消費者購買商品技能向下扎根。<br />
-      2013年接受職訓局400個小時的多媒體影音特效培訓班的訓練，更加精進<br />
-      相關軟體的操作與應用。2014~2017年為全職媽媽兼任設計接案者。      </div>
-      <!--content_box-->
-    <div class="content_box">
-      <ul>
-        <li>專長/Summary of Skills</li>平面設計‧設計排版‧插畫設計‧攝影
-        <li>軟體技能/Computer skills<br />
-          <img src="image/about/skill.png" width="223" height="32" alt="skill" /><br />
-            Photoshop‧Illustrator‧InDesign‧<br />
-          Dreamweaver‧Premiere‧
-          After effects</li>
-        <li>國際證照/Certification<br />
-          Adobe ACA Photoshop國際認證<br />
-          Adobe ACA Dreamweaver 國際認證<br /> JLPT(日本語能力試驗)2級     </li>
-      </ul>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li><i class="fa fa-paint-brush" aria-hidden="true"></i>專長及軟體技能</li></h4>
+                            <p>平面設計/圖像設計/LINE貼圖設計/插畫設計/包裝設計
+                                <br />Photoshop‧Illustrator‧InDesign‧ Dreamweaver‧Premiere‧After Effects
+                                <br />
+                                <img src="image/skill.png" max-width="223" alt="skill" />
+                                <br />
+                            </p>
+                            <span class="cd-date">Summary of Skills</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-advanced_studies">
+                            <img src="image/cd-icon-advanced_studies.svg" alt="advanced_studies">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>/進修/角色設計&透視課</li></h4>
+                            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>1.角色設計>講師 Crystal Kung<br />形狀/剪影/動態線/比例/直線曲線/情緒表演 
+                                <br /><br /><i class="fa fa-graduation-cap" aria-hidden="true"></i>2.透視繪圖>講師 Nuomi<br />視平線/消失點/方塊透視/實戰</p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2017-2018</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-advanced_studies">
+                            <img src="image/cd-icon-advanced_studies.svg" alt="advanced_studies">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>/進修/網頁排版課程</li></h4>
+                            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>講師 六角學院
+                                <br />Sublime Text3網頁編輯器
+                                /RWD響應式網頁設計
+                                /Bootstrat4開源工具包
+                                /gulp網頁前端自動化</p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2017-2018</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-jobs">
+                            <img src="image/cd-icon-jobs.svg" alt="jobs">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>設計接案 SOHO</li></h4>
+                            <p>LOGO/主視覺/DM/Banner/角色/大牆廣告/LINE貼圖設計/包裝設計</p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2014-2018</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊-->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-advanced_studies">
+                            <img src="image/cd-icon-advanced_studies.svg" alt="advanced_studies">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>/進修/多媒體影音特效</li></h4>
+                            <p><i class="fa fa-graduation-cap" aria-hidden="true"></i>接受職訓局400個小時多媒體影音特效培訓班的訓練，Dreamweaver網頁設計‧Premiere影音剪接‧After Effects特效軟體實務學習。
+                            </p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2013</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-jobs">
+                            <img src="image/cd-icon-jobs.svg" alt="jobs">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>網頁視覺設計</li></h4>
+                            <p>1.網頁主視覺
+                                <br />2.商品頁框Banner
+                                <br />3.廣告曝光版面設計-ex.google廣告曝光
+                            </p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2012-2013</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-jobs">
+                            <img src="image/cd-icon-jobs.svg" alt="jobs">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>印前美工</li></h4>
+                            <p>於印刷廠的印前製程經驗，從完稿，修改，落版每位設計師的繁複稿件，解決印前的各式誤差，於當中累積了對設計的敏銳度。
+                            </p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>2008-2012</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-jobs">
+                            <img src="image/cd-icon-jobs.svg" alt="jobs">
+                        </div>
+                        <!-- cd-timeline-圖標 -->
+                        <div class="cd-timeline-content">
+                            <h4><li>美工企劃</li></h4>
+                            <p>行銷活動安排/商品上架/頁面美化</p>
+                            <span class="cd-date"><i class="fa fa-calendar" aria-hidden="true"></i>Sep 2007</span>
+                        </div>
+                        <!-- cd-timeline-內容文字 -->
+                    </div>
+                    <!-- cd-timeline-區塊 -->
+
+                </section>
+                <!-- cd-timeline -->
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+                <script src="js/main.js"></script>
+                <!-- Resource jQuery -->
+            </div>
+        </div>
+        <div id="footer"> © 2018 Hedy Design.</div>
     </div>
-    <!--content_box-->
-    
-      </div>
-    <!--text-center-->
-  </div>
-  <!--content-->
-<div id="footer"> © 2017 Hedy Design.</div>
-</div>
-
+    <!--main-->
+    <div id="gotop">˄</div>
+    <script src="js/js-gotop.js"></script>
 </body>
+
 </html>

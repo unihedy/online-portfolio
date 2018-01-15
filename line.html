@@ -1,188 +1,292 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Hedy's online portfolio</title>
 
-<meta name="description"content="
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hedy's online portfolio</title>
+    <meta name="description" content="
 代表形象為表情豐富的台灣種企鵝，明明是企鵝卻怕冷，<br />
 牡羊座，卻熱愛清爽的藍綠色，<br />
 喜歡畫圖，攝影及玩羊毛氈。
-"/>
-<meta name="author"content="Hedy">
-<meta name="copyright" CONTENT="本網頁著作權Hedy所有">
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="./css/avgrund.css">
+" />
+    <meta name="author" content="Hedy">
+    <meta name="copyright" CONTENT="本網頁著作權Hedy所有">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/avgrund.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style type="text/css">
+   
+    </style>
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+  <style>
+    .remodal-bg.with-red-theme.remodal-is-opening,
+    .remodal-bg.with-red-theme.remodal-is-opened {
+      filter: none;
+    }
 
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    .remodal-overlay.with-red-theme {
+      background-color: #f44336;
+    }
 
-<style type="text/css">
+    .remodal.with-red-theme {
+      background: #fff;
+    }
+    a{
+        text-decoration:none;
+    }
+  </style>
+  <!--輕量級幻燈片-->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <style>
+            ul {
+        list-style: none outside none;
+    }
 
-#apdiv_big {
-	width: 1300px;
-	border: 5px solid #F00;
-	position: relative;
-}
-</style>
+    .demo .item {
+        margin-bottom: 30px;
+    }
 
-<script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+    .demo {
+        max-width: 812px;
+        margin-left: 30px;
+    }
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+    @media only screen and (max-width:768px) {
+        .demo {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    @media only screen and (max-width:414px) {
+        .demo {
+            margin-left: 10px;
+            margin-right: 10px;
+            }
+    @media only screen and (max-width:375px) {
+        .demo {
+            margin-left: 10px;
+            margin-right: 10px;
+            }
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-</script>
-<!--分析-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    </style>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <!--輕量級幻燈片-->
+    <!--分析-->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-46056802-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!--分析-->
+    ga('create', 'UA-46056802-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!--分析-->
+    
 </head>
+<body>
 
-<body onload="MM_preloadImages('image/line/Ha-Ha-Husky-big.jpg','image/line/Gourmet-big.jpg','image/line/sticker-mania-big.jpg','image/line/Always-There-for-You-big.jpg','image/line/power-of-angel-and-devil-in-little-boy-big.jpg','image/line/Best-Actor-chameleon-big.jpg','image/line/shoes-mania-big.jpg','image/line/Gourmet2-big.jpg','image/line/sleepenguin-sleeptopia-big.jpg','image/line/Shopping-mania-big.jpg','image/line/Eat-more-move-more-big.jpg','image/line/A-sticker-a-day-keeps-doctor-away-big.jpg','image/line/sticke-of-energetic-words-big.jpg','image/line/sticke-of-energetic-words-Vol.2-big.jpg','image/line/Dont-test-my-limits-big.jpg')">
-  
 <div id="main">
-  <div id="header">
-    <div id="logo"><a href="index.html"><img src="image/LOGO.svg" width="228" height="219" alt="logo" title="Hedy's online portfolio" /></a></div>
-    <div id="bignav">
-      <ul id="nav">
-        <li class="about"><a href="about.html">about</a></li>
-        <li class="gallery"><a href="gallery.html">gallery</a></li>
-        <li class="web"><a href="web.html">web</a></li>
-        <li class="line_selected"></li>
-        <li class="hobby"><a href="hobby-Felting.html">hobby</a></li>
-        <li class="contact"><a href="contact.html">contact</a></li>
-      </ul>
-    </div>
-    <!--麵包屑-->
-    <ul class="Breadcrumb">
-      <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a title="回首頁" href="index.html" itemprop="url"> <span itemprop="title">首頁</span> </a> » </li>
-      <li> <a class="title">LINE原創貼圖</a> </li>
-    </ul>
-    
-    <!--麵包屑--> 
-  </div>
-  <div id="content">
-    
-    <div class="content_line_big"> 
-      <!--標題-->
-      <h2 id="float_left">Line Sticker原創貼圖設計</h2>
-      <!--標題-->
-   
-   
-    <!--展示大表格DIV-->
-    <div id="big_img"><img src="image/line/Polar-family-big.jpg" alt="MUSICART" name="big" width="650" height="357" id="big" />1 </div>
-    <!--展示大表格DIV-->
-    <!--小表格DIV-->
-    <div id="small_img">
-      <table width="300" border="0">
-        <tr>
-          <td><img src="image/line/Polar-family.png" alt="極地家族也有春天" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Polar-family-big.jpg',1)" /></td>
-          <td><img src="image/line/Ha-Ha-Husky.png" alt="貼不釋手的哈士奇君" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Ha-Ha-Husky-big.jpg',1)" /></td>
-          <td><img src="image/line/Gourmet.png" alt="我美食家捏" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Gourmet-big.jpg',1)" /></td>  
-          <td><img src="image/line/sticker-mania.png" alt="貼圖強迫症" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/sticker-mania-big.jpg',1)" /></td>
-        </tr>
+        <div id="header">
+            <div id="logo"><a href="index.html">LOGO</a></div>
+            <div id="bignav">
+                <ul id="nav">
+                    <li class="about"><a href="about.html">關於我</a></li>
+                    <li class="gallery"><a href="gallery.html">畫廊</a></li>
+                    <li class="web"><a href="web.html">網頁</a></li>
+                    <li class="line_selected"><a><i class="fa fa-sort-desc" aria-hidden="true"></i>貼圖</a></li>
+                    <li class="hobby"><a href="hobby-Felting.html">嗜好</a></li>
+                    <li class="contact"><a href="contact.html">聯絡我</a></li>
+                </ul>
+            </div>
+            <!--麵包屑-->
+            <ul class="Breadcrumb">
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"> <a title="回首頁" href="index.html" itemprop="url"> <span itemprop="title">首頁</span> </a> » </li>
+                <li> <a class="title">LINE原創貼圖</a> </li>
+            </ul>
+            <!--麵包屑-->
+        </div>
+        <div id="content">
+            <!--標題-->
+            <h2 id="float_left">Line Sticker原創貼圖設計</h2>
+            <!--標題-->
+         <div class="linepage">   
+           <div class="column"> 
+            <div class="demo">
+                <div class="item">
+                    <div class="clearfix" style="max-width:700px;">
+                        <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                            <li data-thumb="image/line/Polar-family.png" alt="極地家族也有春天">
+                                <img width="100%" src="image/line/Polar-family-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Ha-Ha-Husky.png" alt="貼不釋手的哈士奇君">
+                                <img width="100%" src="image/line/Ha-Ha-Husky-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Gourmet.png" alt="我美食家捏">
+                                <img width="100%" src="image/line/Gourmet-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/sticker-mania.png" alt="貼圖強迫症">
+                                <img width="100%" src="image/line/sticker-mania-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Always-There-for-You.png" alt="祝人為快樂之本的澎派包">
+                                <img width="100%" src="image/line/Always-There-for-You-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/power-of-angel-and-devil-in-little-boy.png" alt="放肆吧小屁孩">
+                                <img width="100%" src="image/line/power-of-angel-and-devil-in-little-boy-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Best-Actor-chameleon.png" alt="影帝變色龍龍龍龍龍兒">
+                                <img width="100%" src="image/line/Best-Actor-chameleon-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/shoes-mania.png" alt="戀鞋❤情節">
+                                <img width="100%" src="image/line/shoes-mania-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Gourmet2.png" alt="我美食家捏2">
+                                <img width="100%" src="image/line/Gourmet2-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/sleepenguin-sleeptopia.png" alt="獨睡睡不如眾睡睡"> 
+                                <img width="100%" src="image/line/sleepenguin-sleeptopia-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Shopping-mania.png" alt="Let's購物頻道">
+                                <img width="100%" src="image/line/Shopping-mania-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Eat-more-move-more.png" alt="動!是為了吃得更多">
+                                <img width="100%" src="image/line/Eat-more-move-more-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/A-sticker-a-day-keeps-doctor-away.png" alt="為您做一個報備的動作">
+                                <img width="100%" src="image/line/A-sticker-a-day-keeps-doctor-away-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/sticke-of-energetic-words.png" alt="淘氣的字兒">
+                                <img width="100%" src="image/line/sticke-of-energetic-words-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/sticke-of-energetic-words-Vol.2.png" alt="淘氣的字兒Vol.2">
+                                <img width="100%" src="image/line/sticke-of-energetic-words-Vol.2-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Dont-test-my-limits.png" alt="是你B我的!">
+                                <img width="100%" src="image/line/Dont-test-my-limits-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Succulent-Pastry.png" alt="覺得多肉椪">
+                                <img width="100%" src="image/line/Succulent-Pastry-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Tired-pose-master.png" alt="豬隊友姿勢家">
+                                <img width="100%" src="image/line/Tired-pose-master-big.jpg" />
+                            </li>
+                            <li data-thumb="image/line/Undersea-showtime.png" alt="海洋寶貝(家長與老師的溝通代言人)">
+                                <img width="100%" src="image/line/Undersea-showtime-big.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <tr> 
-          <td><img src="image/line/Always-There-for-You.png" alt="祝人為快樂之本的澎派包" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Always-There-for-You-big.jpg',1)" /></td>
-          <td><img src="image/line/power-of-angel-and-devil-in-little-boy.png" alt="放肆吧小屁孩" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/power-of-angel-and-devil-in-little-boy-big.jpg',1)" /></td>
-          <td><img src="image/line/Best-Actor-chameleon.png" alt="影帝變色龍龍龍龍龍兒" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Best-Actor-chameleon-big.jpg',1)" /></td>
-          <td><img src="image/line/shoes-mania.png" alt="戀鞋❤情節" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/shoes-mania-big.jpg',1)" /></td>
-          
-      </tr>
-          
-       <tr>   
-         <td><img src="image/line/Gourmet2.png" alt="我美食家捏2" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Gourmet2-big.jpg',1)" /></td>
-         <td><img src="image/line/sleepenguin-sleeptopia.png" alt="獨睡睡不如眾睡睡" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/sleepenguin-sleeptopia-big.jpg',1)" /></td>
-          <td><img src="image/line/Shopping-mania.png" alt="Let's購物頻道" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Shopping-mania-big.jpg',1)" /></td>
-          <td><img src="image/line/Eat-more-move-more.png" alt="動!是為了吃得更多" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Eat-more-move-more-big.jpg',1)" /></td>
-        </tr>
-        
-        <tr>  
-          <td><img src="image/line/A-sticker-a-day-keeps-doctor-away.png" alt="為您做一個報備的動作" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/A-sticker-a-day-keeps-doctor-away-big.jpg',1)" /></td>
-          <td><img src="image/line/sticke-of-energetic-words.png" alt="淘氣的字兒" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/sticke-of-energetic-words-big.jpg',1)" /></td>
-          <td><img src="image/line/sticke-of-energetic-words-Vol.2.png" alt="淘氣的字兒Vol.2" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/sticke-of-energetic-words-Vol.2-big.jpg',1)" /></td>
-          <td><img src="image/line/Dont-test-my-limits.png" alt="是你B我的!" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Dont-test-my-limits-big.jpg',1)" /></td>
-        </tr>
-        
-        
-       <tr>  
-          <td><img src="image/line/Succulent-Pastry.png" alt="覺得多肉椪" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Succulent-Pastry-big.jpg',1)" /></td>
-          <td><img src="image/line/Tired-pose-master.png" alt="豬隊友姿勢家" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Tired-pose-master-big.jpg',1)" /></td>
-          <td><img src="image/line/Undersea-showtime.png" alt="海洋寶貝(家長與老師的溝通代言人)" width="75" height="75" onmouseover="MM_swapImage('big','','image/line/Undersea-showtime-big.jpg',1)" /></td>
-          
-        </tr> 
-      </table>
-      
-       <!--LINE貼圖連結start-->
     
-   
-
-  <h4><a href="#" id="show" class="linesticker">所有貼圖與主題</a> </h4>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="./js/jquery.avgrund.js"></script>
-	<script>
-	$(function() {
-		$('#show').avgrund({
-			width: 980,
-            height: 630, 
-			holderClass: 'custom',
-			showClose: true,
-			showCloseText: '<img src="image/line/close.png" width="7" height="7" alt="close" />&nbsp;close',
-			onBlurContainer: '.container',
-			template: 
-			
-			'<div>' +
-			'<p><img src="image/line/linebg.jpg" width="980" height="550" /></p>' +
-			 '<a href="http://line.me/S/shop/sticker/author/9501" target="_blank" class="line_allsticker">all Stamps 全貼圖連結</a>'+
-			 '<a href="http://store.line.me/themeshop/author/92591" target="_blank" class="line_alltheme">all Themes 全主題連結</a>'+
-           
-			'</div>'
-			
-			
-		});
-	});
-	</script>
-  
-    <!--LINE貼圖連結end--> 
-      
-      
-      
-    </div>
-    
-    <!--小表格DIV--> 
-    
-  
-    
-  </div>
 
 
+<div class="remodal-bg">
+  <a class="btn btn-penguin" href="#" data-remodal-target="modal">企鵝媽咪所有貼圖與主題</a>
+ </div>
 </div>
-  <div id="footer"> © 2017 Hedy Design.</div>
+
+
+
+<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  
+  <div>
+                                
+<div class="remodal-bg"> <img src="image/line/linebg.jpg" width="100%" height="auto" /> </div>
+                               
+                                <a href="http://line.me/S/shop/sticker/author/9501" target="_blank" class="line_allsticker">All Stickers 貼圖一覽</a>
+                                <a href="http://store.line.me/themeshop/author/92591" target="_blank" class="line_alltheme">All Themes 主題一覽</a>
+
+                                </div>
+</div>
+</div>
+
+
+
+<script>
+   window.REMODAL_GLOBALS = {
+    NAMESPACE: 'remodal',
+     DEFAULTS: {
+      hashTracking: true,
+       closeOnEscape: true,
+       closeOnOutsideClick: true,
+      modifier: ''
+     }
+   };
+</script>
+<script src="js/remodal.js"></script>
+
+<!-- Events -->
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+
+$(document).ready(function() {
+        $("#content-slider").lightSlider({
+            auto: true,
+            loop: true,
+            keyPress: true,
+            item: 1,
+        });
+        $('#image-gallery').lightSlider({
+            gallery: true,
+            item: 1,
+            thumbItem: 8,
+            slideMargin: 0,
+            speed: 500,
+            auto: true,
+            loop: true,
+            onSliderLoad: function() {
+                $('#image-gallery').removeClass('cS-hidden');
+            }
+        });
+        $('#modal').remodal({
+                            width: 980,
+                            height: 630,
+                            holderClass: 'custom',
+                            modalClose: true,
+                            modalCloseText: '<img src="image/line/close.png" width="7" height="7" alt="close" />&nbsp;close',
+                            onBlurContainer: '.container',
+                            template:
+
+                                '<div>' +
+                                '<p><img src="image/line/linebg.jpg" width="980" height="550" /></p>' +
+                                '<a href="http://line.me/S/shop/sticker/author/9501" target="_blank" class="line_allsticker">all Stamps 全貼圖連結</a>' +
+                                '<a href="http://store.line.me/themeshop/author/92591" target="_blank" class="line_alltheme">all Themes 全主題連結</a>' +
+
+                                '</div>'
+
+                        });
+        });
+
+</script>
+<div id="footer"> © 2018 Hedy Design.</div>
 </div>
 </body>
 </html>
