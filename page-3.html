@@ -27,12 +27,12 @@
     .demo .item{
           margin-bottom: 30px;
         }
-    .content-slider li{
+    .content-slider2 li{
       background-color: #ffffff;
       text-align: center;
       color:#FFF;
     }
-    .content-slider h3 {
+    .content-slider2 h3 {
         margin: 0;
         padding: 70px 0;
     }
@@ -139,7 +139,7 @@
 <div class="demo">
         <div class="item">            
             <div class="clearfix" style="max-width:600px;">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                <ul id="image-gallery2" class="gallery list-unstyled cS-hidden">
                     <li data-thumb="image/web/ad/1.250x250.jpg"> 
                         <img src="image/web/ad/1.250x250.jpg" />
                          </li>
@@ -169,7 +169,7 @@
             </div>
         </div>
         <div class="item">
-            <ul id="content-slider" class="content-slider">
+            <ul id="content-slider2" class="content-slider">
                 <li>
                     <img width="70%" src="image/web/ad/A.jpg" />
                 </li>
@@ -215,13 +215,13 @@
 <div id="gotop">˄</div>
 <script>
        $(document).ready(function() {
-      $("#content-slider").lightSlider({
+      $("#content-slider2").lightSlider({
                 auto:true,
                 loop:true,
                 keyPress:true,
                 item:1,
             });
-            $('#image-gallery').lightSlider({
+            $('#image-gallery2').lightSlider({
                 gallery:true,
                 item:1,
                 thumbItem:8,
@@ -230,7 +230,7 @@
                 auto:true,
                 loop:true,
                 onSliderLoad: function() {
-                    $('#image-gallery').removeClass('cS-hidden');
+                    $('#image-gallery2').removeClass('cS-hidden');
                 }  
             });
     });
