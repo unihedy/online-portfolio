@@ -210,6 +210,63 @@
                 </li>
             </ul>
         </div>
+        <!--test-->
+<div class="item">            
+            <div class="clearfix" style="max-width:600px;">
+                <ul id="image-gallery2" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="image/web/ad/1.250x250.jpg"> 
+                        <img src="image/web/ad/1.250x250.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/2.336x280.jpg"> 
+                        <img src="image/web/ad/2.336x280.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/3.300x250.jpg"> 
+                        <img src="image/web/ad/3.300x250.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/5.200x200.jpg"> 
+                        <img src="image/web/ad/5.200x200.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/mothersday200x200.jpg"> 
+                        <img src="image/web/ad/mothersday200x200.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/mothersday336x280.jpg"> 
+                        <img src="image/web/ad/mothersday336x280.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/third-250x250.jpg"> 
+                        <img src="image/web/ad/third-250x250.jpg" />
+                         </li>
+                    <li data-thumb="image/web/ad/third-300x600-120x600.jpg"> 
+                        <img src="image/web/ad/third-300x600-120x600.jpg" />
+                         </li>
+                
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <ul id="content-slider2" class="content-slider">
+                <li>
+                    <img width="70%" src="image/web/ad/A.jpg" />
+                </li>
+                <li>
+                    <img width="70%" src="image/web/ad/B.jpg" />
+                </li>
+                <li>
+                    <img width="80%" src="image/web/ad/C.jpg" />
+                </li>
+                <li>
+                    <img width="80%" src="image/web/ad/D.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/ad/E.jpg" />
+                </li>
+                <li>
+                    <img width="100%" src="image/web/ad/F.jpg" />
+                </li>
+            </ul>
+        </div>
+        <!--test-->
+
+
 
    </div><!-- /demo -->
     </div><!-- /column -->
@@ -250,6 +307,27 @@
                     $('#image-gallery').removeClass('cS-hidden');
                 }  
             });
+
+
+            $("#content-slider2").lightSlider({
+                auto:true,
+                loop:true,
+                keyPress:true,
+                item:1,
+            });
+            $('#image-gallery2').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:8,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery2').removeClass('cS-hidden');
+                }  
+            });
+
     });
     </script>
 <script src="js/js-gotop.js"></script>
