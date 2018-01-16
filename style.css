@@ -603,7 +603,7 @@ td img:hover {
 
 .title_t {
     color: #85CBC4;
-    height: 60px;
+    
     position: relative;
     margin-left: 0;
     line-height: 32px;
@@ -1386,7 +1386,8 @@ a.btn-penguin {
         text-align: center;
     }
     .ad_box {
-        margin: 0 0 30px 120px;
+        margin:30px auto;
+        margin-top: 10px;
     }
     .ad_box_small {
         float: none;
