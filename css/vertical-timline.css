@@ -237,6 +237,15 @@ Main components
   list-style-type: none;
   list-style-image: url(../image/li_style.png);
 }
+@media only screen and (max-width:812px) {
+  .cd-timeline-content h4 li{
+  list-style-type: none;
+  list-style-image:none;}
+  .cd-timeline-content h4 {
+  color: #303e49;
+  font-size:15px;
+}
+}
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
