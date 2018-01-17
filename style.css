@@ -642,6 +642,7 @@ td img:hover {
 .column {
     position: relative;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 
