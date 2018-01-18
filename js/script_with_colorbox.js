@@ -10,7 +10,6 @@
 			itemSelector: '.column',
 			loaderSymbolSelector: '.loaderSymbol' // 載入中的CSS選擇器
 		};
-
 	//為方便之後操作，將變數中的容器資訊於初始時先設定至$container，
 //容器主要是在Masonry中用以放置排版用的格子元素
 		var　$container = param.masonryTargetContainer;
@@ -62,7 +61,7 @@
 		// 執行colorBox
 		function colorBoxSetting(_t){
 			$(_t).find('a').colorbox();
-		}
+		$(_t).find('a').colorbox({maxWidth:'99%', maxHeight:'99%'});}
 
 		// 字串取代處理
     function replaceString(_str, _bf, _af, _flg){
