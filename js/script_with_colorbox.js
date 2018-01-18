@@ -61,7 +61,7 @@
 		// 執行colorBox
 		function colorBoxSetting(_t){
 			$(_t).find('a').colorbox();
-		$(_t).find('a').colorbox({maxWidth:'99%', maxHeight:'99%'});}
+		$(_t).find('a').colorbox({maxWidth:'99%', maxHeight:'auto%'});}
 
 		// 字串取代處理
     function replaceString(_str, _bf, _af, _flg){
