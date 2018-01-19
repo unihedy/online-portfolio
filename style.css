@@ -926,18 +926,13 @@ h5 a{
     letter-spacing: 1px;
     text-align: center;
     line-height: 30px;
-    width: 760px;
+    max-width: 760px;
     overflow: auto;
     height: 450px;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
 }
-
-
-
-
-
 
 /*表單title*/
 
