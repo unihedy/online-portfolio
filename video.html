@@ -64,6 +64,16 @@
     // 若支援javascript則不載入noscriipt.css
     var _elem = document.getElementById('noScriptCSS');
     _elem.parentNode.removeChild(_elem);
+
+
+jQuery(window).on('load', function(){
+$('.grid').masonry({
+    // options
+
+    itemSelector: '.grid-item',
+    columnWidth: 10,
+});
+});
 </script>
 
     <div id="main">
