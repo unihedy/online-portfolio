@@ -50,15 +50,14 @@
 	_elem.parentNode.removeChild(_elem);
 
 
-  // init Masonry
-var $grid = $('.grid').masonry({
-  // options...
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
+jQuery(window).on('load', function(){
+$('.grid').masonry({
+    // options
 
+    itemSelector: '.grid-item',
+    columnWidth: 10,
+});
+});
 </script>
 
 
