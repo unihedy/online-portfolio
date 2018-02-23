@@ -133,7 +133,6 @@ Masonry grid basic setting
 
   /* Javascript無效時會載入noscript.css，此屬性會變成visible */
   visibility: hidden;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -185,7 +184,14 @@ sample3　fluid grid的額外設定
 #photoGalleryContainer.fluid .column.w3 {
   width: 74.5%;
 }
-
+@media only screen and (max-width:640px) {
+#photoGalleryContainer.fluid .column.w2 {
+  width: 100%;
+}
+#photoGalleryContainer.fluid .column.w3 {
+  width: 100%;
+}
+        }
 /*
 sample4　colorbox的額外設定
 */
@@ -202,8 +208,35 @@ sample4　colorbox的額外設定
 }
 #photoGalleryContainer.withColorbox .column:hover {
   background:#4F9D9D;
+
+}
+#photoGalleryContainer.withColorbox .column.w2 {
+  background: #fff;
+  -webkit-transition: background-color .4s linear;
+  transition: background-color .4s linear;
+  border-radius: 8px;
+  -ms-radius: 8px; /* IE 9 */
+  -webkit-radisus: 8px; /* Safari and Chrome */
+  -o-radius: 8px; /* Opera */
+  -moz-radius: 8px; /* Firefox */
+}
+#photoGalleryContainer.withColorbox .column.w2:hover {
+  background:#fff;
 }
 
+#photoGalleryContainer.withColorbox .column.w3 {
+  background: #fff;
+  -webkit-transition: background-color .4s linear;
+  transition: background-color .4s linear;
+  border-radius: 8px;
+  -ms-radius: 8px; /* IE 9 */
+  -webkit-radisus: 8px; /* Safari and Chrome */
+  -o-radius: 8px; /* Opera */
+  -moz-radius: 8px; /* Firefox */
+}
+#photoGalleryContainer.withColorbox .column.w3:hover {
+  background:#fff;
+}
 
 @media only screen and (max-width:767px) {
   .inner {
@@ -232,6 +265,12 @@ sample4　colorbox的額外設定
     margin: 0 0 1em;
   }
   #photoGalleryContainer .column {
+    width: 100%;
+  }
+  #photoGalleryContainer .column .w2 {
+    width: 100%;
+  }
+  #photoGalleryContainer .column .w3 {
     width: 100%;
   }
   #photoGalleryContainer.fluid .column {
